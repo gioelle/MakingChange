@@ -4,6 +4,7 @@ public class ChangeMaker {
 	
 	public static void main(String[] args){
 		System.out.println("Please enter the change due in dollars and cents: ");
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner (System.in);
 		double dollarsandcents = input.nextDouble();
 		System.out.println("you'll receive " + makinChange(dollarsandcents) + " coins.");
